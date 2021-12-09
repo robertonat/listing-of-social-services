@@ -23,13 +23,13 @@ var filteredResources = resources.filter(resources => resources.NTA.includes(inp
 // Once I had all the values in my output variable, all I needed was to loop through them and add them to the table one by one. This was done using d3, where I inserted the value for each one of the columns I wanted using the necessary html to fit each table row.
 for (var i = 0; i < filteredResources.length; i++) {
 d3.select("tbody").insert("tr").html(
-"<td>" + (filteredResources[i]['NTA'])+"</a>"+"</td>" +
-"<td>" + (filteredResources[i]['boro'])+"</td>" +
-"<td>" + (filteredResources[i]['zip'])+"</td>" +
-"<td>" + (filteredResources[i]['address'])+"</td>" +
-"<td>" + (filteredResources[i]['phone'])+"</td>" +
-"<td>" + (filteredResources[i]['additional information'])+"</td>" +
-"<td>" + (filteredResources[i]['tag'])+"</td>" +
-"<td>" + (filteredResources[i]['source'])+"</td" ) }
+  "<td>" + (filteredResources[i]['NTA'])+"</a>"+"</td>" +
+  "<td>" + (filteredResources[i]['boro'])+"</td>" +
+  "<td>" + (filteredResources[i]['zipcode'])+"</td>" +
+  "<td>" + (filteredResources[i]['address'])+"</td>" +
+  "<td>" + (filteredResources[i]['phone'])+"</td>" +
+  "<td>" + (filteredResources[i]['Additional information'])+"</td>" +
+  "<td>" + (filteredResources[i]['Tag'])+"</td>" +
+  "<td>" + (filteredResources[i]['Source'])+"</td" ) }
 };
 });
