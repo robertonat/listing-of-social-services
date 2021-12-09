@@ -29,7 +29,7 @@ for (var i = 0; i < filteredResources.length; i++) {
 d3.select("tbody").insert("tr").html(
   "<td>" + (filteredResources[i]['NTA'])+"</a>"+"</td>" +
   "<td>" + (filteredResources[i]['boro'])+"</td>" +
-  "<td>" + (filteredResources[i]['zipcode'])+"</td>" +
+  "<td>" + (filteredResources[i]['zip'])+"</td>" +
   "<td>" + (filteredResources[i]['address'])+"</td>" +
   "<td>" + (filteredResources[i]['phone'])+"</td>" +
   "<td>" + (filteredResources[i]['Additional information'])+"</td>" +
