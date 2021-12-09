@@ -1,25 +1,44 @@
-<html lang="en" dir="ltr">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="utf-8">
+    <script src="d3.v3.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="script.js"></script>
     <title>Listing of social services</title>
     <link rel="stylesheet" href="styles.css">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
+
   <body>
-    <a href="report.html">Report</a>
-    <div class="wrapper">
-      <div class="search-input">
-        <a href="" target="_blank" hidden></a>
-        <input type="text" placeholder="Type to search..">
-        <div class="autocom-box">
-          <!-- here list are inserted from javascript -->
-        </div>
-        <div class="icon"><i class="fas fa-search"></i></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class=>Listing of social services</h1>
+        <h2 class=>Enter a search term to find resources</h2>
+
+        <form id="form">
+          <input submit="run()" class="form-control" id="user-input" placeholder="Enter search term">
+          <button onclick="run()">Search</button>
+        </form>
+
+  <table class="table" cellpadding="10">
+    <thead>
+      <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Borough</th>
+      <th scope="col">zipcode</th>
+      <th scope="col">address</th>
+      <th scope="col">phone</th>
+      <th scope="col">additional information</th>
+      <th scope="col">tag</th>
+      <th scope="col">source</th>
+
+      </tr>
+    </thead>
+    <tbody>
       </div>
-    </div>
-    <p>All data was collected at <a href="https://opendata.cityofnewyork.us/"> Open data NYC</a>. Data was modified in order to fit this sites schema.</p>
-     <script src="suggestions.js"></script>
-     <script src="script.js"></script>
+        </div>
+          </div>
 
   </body>
+    <p style="font-size:70%;">All data was collected at <a href="https://opendata.cityofnewyork.us/"> Open data NYC</a>. Data was modified in order to fit this sites schema.</p>
 </html>
