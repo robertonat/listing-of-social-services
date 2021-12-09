@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="d3.v3.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="script.js"></script>
     <title>Listing of social services</title>
@@ -16,16 +16,16 @@
         <h2 class=>Enter a search term to find resources</h2>
 
         <form id="form">
-          <input submit="run()" class="form-control" id="user-input" placeholder="Enter search term">
-          <button onclick="run()">Search</button>
+          <input class="form-control" id="user-input" placeholder="Enter search term">
+          <button id="button" class="btn btn-secondary">Search</button>
         </form>
 
   <table class="table" cellpadding="10">
     <thead>
       <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Borough</th>
-      <th scope="col">zipcode</th>
+      <th scope="col">NTA</th>
+      <th scope="col">boro</th>
+      <th scope="col">zip</th>
       <th scope="col">address</th>
       <th scope="col">phone</th>
       <th scope="col">additional information</th>
