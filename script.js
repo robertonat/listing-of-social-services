@@ -1,3 +1,7 @@
+
+/*This code was originally found at this tutorial https://levelup.gitconnected.com/building-a-simple-website-that-outputs-results-from-a-csv-using-users-input-bfcb782ced45
+Small alterations were made for the creation of this website
+*/
 d3.csv("final.csv").then(function (data) {
 var resources = data;
 var button = d3.select("#button");
